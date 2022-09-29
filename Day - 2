@@ -1,0 +1,20 @@
+Day 2:
+Topic: array
+Today I have learned about how to build array from the permutation
+Question: https://lnkd.in/djDGh6eE
+Solution: 
+int p=nums.length*2;
+        int arr2[]=new int[p];
+        for(int i=0;i<nums.length;i++)
+        {
+            arr2[i]=nums[i];
+
+
+        }
+        for(int i=nums.length;i<arr2.length;i++)
+        {int k=nums.length;
+
+                arr2[i]=nums[i-k];
+            k--;
+        }
+        return arr2;
