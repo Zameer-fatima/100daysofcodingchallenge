@@ -26,3 +26,28 @@ Then returns "invalid input"
 
 (These are some test cases that i have collected. you can also share your suggestions on more such test cases.)
 
+Explanation:
+
+I. Firstly, we check whether start i.e. low is greater than or equals to end i.e. high
+   while start <= high:
+
+1. Then, find the mid element
+    we can find mid like, mid = start + (end - start)/2
+2. Check if the nums[mid] > target value then the first element will occur on the left side of mid. So, bring the high pointer to mid – 1.
+3. Check if the nums[mid] < target value then the first element will occur on the right side of mid. So, bring the low pointer to mid + 1
+4. If nums[mid] == target value then this may be the first element. So, update the result to mid and move the high pointer to mid – 1.
+5. Return the result.
+      
+II. Secondly, we check for the last occurenece,
+    while start <= high:
+
+1. Then, find the mid element
+   mid = start + (end - start)/2
+2. Check if the nums[mid] > target value then the last element will occur on the left side of mid. So, bring the low pointer to mid – 1
+3. Check if the nums[mid] < target value then the last element will occur on the right side of mid. So, bring the low pointer to mid + 1
+4. If nums[mid] == target value then this may be the last element. So, update the result to mid and move the low pointer to mid + 1.
+5. Finally, Return the result.
+
+This is how we can find the first and last position of an element in a sorted array.
+
+I hope this will be a clear solution for all of you. You all are also welcome to suggest your ideas and logic to find the solution of this problem!!
