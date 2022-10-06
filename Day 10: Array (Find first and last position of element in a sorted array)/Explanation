@@ -1,0 +1,28 @@
+Find first and last position of element in sorted array
+
+Question: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+
+Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
+You must write an algorithm with O(log n) runtime complexity.
+
+Example 1:
+Input: nums = [5,7,7,8,8,10], target = 8
+Output: [3,4]
+
+Possible test cases:
+
+Case 1: If user enters the value that is not present in the array.
+Then in that case return [-1,-1].
+Input: nums = [5,7,7,8,8,10], target = 6
+Output: [-1,-1]
+
+Case 2: If the array is empty and user gives target as 0.
+Then also return [-1,-1]
+Input: nums = [], target = 0
+Output: [-1,-1]
+
+Case 3: If the user enters any character or string or any special character.
+Then returns "invalid input"
+
+(These are some test cases that i have collected. you can also share your suggestions on more such test cases.)
+
