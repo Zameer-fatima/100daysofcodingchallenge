@@ -1,0 +1,141 @@
+Solution:
+
+import java.util.Scanner;
+import java.util.Arrays;
+	
+
+	class SparceArray {
+	   int x;
+	   int y;
+	   int arr[][];
+	
+
+	   SparceArray(int x, int y) {
+	       this.x = x;
+	       this.y = y;
+	       arr = new int[x][y];
+	
+
+	   }
+	
+
+	   private int checkArray(int arr[][]) {
+	       int zero = 0;
+	       int nonzero = 0;
+	       for (int i = 0; i < x; i++) {
+	           for (int j = 0; j < y; j++) {
+	               if (arr[i][j] == 0) {
+	                   zero++;
+	               } else {
+	                   nonzero++;
+	               }
+	           }
+	       }
+	       if (nonzero > zero) {
+	           System.out.println("this is not a sparce Matrix because non zero element is more then the zero");
+	           Arrays.fill(arr, 0);
+	           return -1;
+	
+
+	       }
+	       return 1;
+	   }
+	
+
+	   public void insert() {
+	       Scanner sc = new Scanner(System.in);
+	
+
+	       for (int i = 0; i < x; i++) {
+	           for (int j = 0; j < y; j++) {
+	               System.out.println("Enter " + i + "" + j + "element");
+	               arr[i][j] = sc.nextInt();
+	           }
+	       }
+	       if (checkArray(arr) == 1) {
+	           System.out.println("Sparce matrix is created ");
+	
+
+	       }
+	
+
+	   }
+	
+
+	   public void deleteElement(int x, int y) {
+	       if(x>this.x||y>this.y){
+	           System.out.println("Index out of Rang");
+	       }
+	       if (arr[x][y] != 0) {
+	           arr[x][y] = 0;
+	           System.out.println("Element is deleted");
+	       } else {
+	           System.out.println("Element is already 0");
+	       }
+	   }
+	
+
+	   public void printSparceArray() {
+	       System.out.println(Arrays.deepToString(arr));
+	   }
+	
+
+	   public void searchElement(int x, int y) {
+	       System.out.println("Element at " + x + "" + y + "is" + arr[x][y]);
+	   }
+	}
+	
+
+	public class sarray {
+	
+
+	   public static void main(String[] args) throws Exception {
+	       Scanner sc = new Scanner(System.in);
+	       SparceArray sparceArray;
+	       System.out.println("Enter the size of row of sparce matrix");
+	       int row = sc.nextInt();
+	       System.out.println("Enter the size of col of sparce matrix");
+	       int col = sc.nextInt();
+	       sparceArray = new SparceArray(row, col);
+	       int choose;
+	       System.out.println("Enter your choose ");
+	       System.out.println("1 FOR INSERT");
+	       System.out.println("2 Delete Eleement from sparce matrix");
+	       System.out.println("3 printSparceArray");
+	       System.out.println("4  Search element in a array ");
+	       System.out.println("5 FOR EXIT");
+	       choose = sc.nextInt();
+	       while (choose != 5) {
+	           if (choose == 1) {
+	
+
+	               sparceArray.insert();
+	
+
+	           } else if (choose == 2) {
+	               System.out.println("Enter the locaion u want to delete");
+	               int x = sc.nextInt();
+	               int y = sc.nextInt();
+	               sparceArray.deleteElement(x, y);
+	           } else if (choose == 3) {
+	               sparceArray.printSparceArray();
+	           } else if (choose == 4) {
+	               System.out.println("Enter the loacation u want to search");
+	               int x = sc.nextInt();
+	               int y = sc.nextInt();
+	               sparceArray.searchElement(x, y);
+	           }
+	           System.out.println("1 FOR INSERT");
+	           System.out.println("2 Delete Eleement from sparce matrix");
+	           System.out.println("3 printSparceArray");
+	           System.out.println("4  Search element in a array ");
+	           System.out.println("5 FOR EXIT");
+	           System.out.println("Enter your choose ");
+	           choose = sc.nextInt();
+	
+
+	       }
+	
+
+	   }
+	}
