@@ -20,6 +20,14 @@ Now we will traverse the indices array and will assign character at ith position
 
 At the end, the result string will contain the new shuffled string.
 
+Test cases possible:
+
+1. If user enters a character or a string in indices.
+2. If user enters same values of indices.
+    e.g. [4,4,5,2,0,2,7,2]
+3. If the String is empty.
+4. If the size of indices is greater than the size of string.
+
 This is it. 
 Hope you understand my logic of solving this problem. 
 
