@@ -19,4 +19,4 @@ After completing this, I will switch to DSA and will solve the problems from all
 4. Trees and Graphs
 Etc.
 
-I am open for all the suggestions. Can connect with me through my linkedIn profile ([www.linkedin.com/in/zameer-fatima-24b0451b6])
+I am open for all the suggestions. Can connect with me through my linkedIn profile (https://www.linkedin.com/in/zameer-fatima-24b0451b6)
