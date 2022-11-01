@@ -1,0 +1,72 @@
+Explanation:
+
+In the above pattern the row is denoted by i and the column is denoted by j.
+
+We see that the first row prints only a star. The second-row prints two star, and so on.
+
+Here we have to use three for loops, the first for loop is for row and the second for loop for the spaces and third for loop is for columns.
+
+The first print statement prints the space between star at the first row and 
+the second print statement prints the star and third print statement prints the space and throws the cursor at the next line.
+
+here n is 5,so..
+for i=0, 0<=5-1 i.e. 4 (true)
+for j=0, 0<=0 (true) (prints 0 space)
+for k=0, 0<=4 (true)
+
+The first print statement prints a space at the first row and the second print statement prints the star and third print statement prints the 
+space and throws the cursor at the next line.
+
+ * * * * *
+
+Now the value of i and j is increased to 1.
+
+for i=1, 1<=5-1 i.e. 4 (true)
+for j=1, 1<=1(true) (prints 1 space)
+for k=1, 1<=4 (true)
+
+The first print statement prints a space at the first row and the second print statement prints the star and third print statement prints the 
+space and throws the cursor at the next line.
+
+ * * * *
+
+Now the value of i and j is increased to 2.
+
+for i=2, 2<=5-1 i.e. 4 (true)
+for j=2, 2<=2(true) (prints 2 space)
+for k=2, 2<=4 (true)
+
+The first print statement prints a space at the first row and the second print statement prints the star and third print statement prints the 
+space and throws the cursor at the next line.
+
+  * * *
+  
+Now the value of i and j is increased to 3.
+ 
+for i=3, 3<=5-1 i.e. 4 (true)
+for j=3, 3<=3(true) (prints 3 space)
+for j=3, 3<=4 (true)
+
+
+The first print statement prints a space at the first row and the second print statement prints the star and third print statement prints the 
+space and throws the cursor at the next line.
+
+  * * 
+  
+  Now the value of i and j is increased to 4.
+  
+  for i=4, 4<=5-1 i.e. 4 (true)
+  for j=4, 4<=4(true) (prints 4 space)
+  for j=4, 4<=4 (true)
+  
+    *
+
+   Now the value of i and j is increased to 5.
+   
+   For i=5, 5<=5-1 -> 5<=4 (false)
+
+   The execution of the program will terminate when the value of i will be greater to the number of rows.
+   
+   Now on reversing the for loop for row will print rest of the pattern.
+   
+   
