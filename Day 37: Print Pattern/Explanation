@@ -1,0 +1,145 @@
+Question link: https://lnkd.in/ghuArfVx
+Topic: Print Pattern
+
+111111
+22222
+3333
+444
+55
+6
+
+Question link: https://lnkd.in/ghuArfVx
+ 
+Explanation:
+
+In the above pattern the row is denoted by i and the column is denoted by j. 
+
+We see that the first row prints number equal to number of rows i.e. n in this case. The second-row prints one number less than the row, and so on.
+
+Here we have to use two for loops, the first for loop is for row and the second for loop for columns.
+
+The first print statement prints a number at the first row and the second println statement prints the spaces and throws the cursor at the next line.
+
+Now the value of i and j is incremented with each iteration.
+
+
+
+For n=6 (the number of rows we want to print).
+
+111111
+
+Iteration 1:
+
+For i=2, 1<=6 (true)
+
+For j=2, j<=6 (true)
+
+print i,
+
+The first print statement prints the number 1 six times at the first row and the second println statement prints the spaces and throws the cursor at the next line.
+
+111111
+
+22222
+
+Now the value of i is increased to 3.
+
+
+
+Iteration 2:
+
+For i=3, 1<=6 (true)
+
+For j=3, j<=6 (true)
+
+print i,
+
+The first print statement prints the number 2 five times at the first row and the second println statement prints the spaces and throws the cursor at the next line.
+
+111111
+
+22222
+
+3333
+
+Now the value of i is increased to 4.
+
+
+
+Iteration 3:
+
+For i=4, 1<=6 (true)
+
+For j=4, j<=6 (true)
+
+print i,
+
+The first print statement prints the number 3 four times at the first row and the second println statement prints the spaces and throws the cursor at the next line.
+
+111111
+
+22222
+
+3333
+
+444
+
+Now the value of i is increased to 5.
+
+
+
+Iteration 4:
+
+For i=5, 1<=6 (true)
+
+For j=5, j<=6 (true)
+
+print i,
+
+The first print statement prints the number 4 three times at the first row and the second println statement prints the spaces and throws the cursor at the next line.
+
+111111
+
+22222
+
+3333
+
+444
+
+55
+
+Now the value of i is increased to 6.
+
+
+
+Iteration 5:
+
+For i=6, 1<=6 (true)
+
+For j=6, j<=6 (true)
+
+print i,
+
+The first print statement prints the number 5 two times at the first row and the second println statement prints the spaces and throws the cursor at the next line.
+
+111111
+
+22222
+
+3333
+
+444
+
+55
+
+6
+
+Now the value of i is increased to 7.
+
+
+
+Iteration 6:
+
+For i=7, 7<=7 (false)
+
+The execution will stop when i becomes equal to n.
