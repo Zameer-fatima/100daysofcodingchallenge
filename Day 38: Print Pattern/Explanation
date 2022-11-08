@@ -1,0 +1,78 @@
+Question: https://github.com/kunal-kushwaha/DSA-Bootcamp-Java
+Explanation:
+
+1
+01
+101
+0101
+10101
+
+1st iteration:
+For i=1, 1<=5 true
+if 1%2==0 true
+l=1
+m=0
+For j=1, 1<=1 true
+if 1%2==0 true
+print l
+
+1
+
+2nd iteration:
+For i=2, 2<=5 true
+if 2%2==0 false
+l=0
+m=1
+For j=2, 2<=2 true
+if 2%2==0 false
+print m
+
+1
+01
+
+3rd iteration:
+For i=3, 3<=5 true
+if 3%2==0 false
+l=0
+m=1
+For j=3, 3<=3 true
+if 3%2==0 false
+print m
+
+1
+01
+101
+
+3rd iteration:
+For i=4, 4<=5 true
+if 4%2==0 false
+l=0
+m=1
+For j=4, 4<=4 true
+if 4%2==0 false
+print m
+
+1
+01
+101
+0101
+
+4th iteration:
+For i=5, 5<=5 true
+if 5%2==0 false
+l=0
+m=1
+For j=5, 5<=5 true
+if 5%2==0 false
+print m
+
+1
+01
+101
+0101
+10101
+
+For i=6, 6<=5 false
+end of execution
+
+Thus we get our pattern..
