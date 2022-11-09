@@ -1,0 +1,29 @@
+LINKED LIST
+
+The following are the types of linked list:
+■ Singly Linked list
+■ Doubly Linked list
+■ Circular Linked list
+■ Doubly Circular Linked list
+
+The singly linked list is a data structure that contains two parts, i.e.,
+one is the data part, and the other one is the address part, which contains the address of the next or the successor node. 
+The address part in a node is also known as a pointer.
+
+Representation of Linkedlist:
+
+class Node{
+ node next;
+        int data;
+        node(int data){
+            this.data = data;
+            this.next = null; 
+        }
+    }
+    
+In the above representation, we have defined a user-defined structure named
+a Node containing two members, the first one is data of integer type, and the other
+one is the pointer (next) of the node type.
+
+A linked list can be used to implement dynamic memory allocation. The dynamic
+memory allocation is the memory allocation done at the run-time.
