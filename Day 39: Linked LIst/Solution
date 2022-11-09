@@ -1,0 +1,59 @@
+public class Day39ll {
+    public static void main(String[] args) {
+        addData(2);
+        addData(5);
+        addData(8);
+        addData(10);
+        display();
+    }
+
+    static node head = null;
+   static node tail = null;
+
+  static  void addData(int data){
+        node newNode = new node(data);
+        if(head==null){
+            head=newNode;
+            tail=newNode;
+        }
+        else{
+            tail.next = newNode;
+            tail=newNode;
+        }
+    }
+
+   static void addFirst(int data){
+        node newNode = new node(data);
+        if(head==null){
+            head = newNode;
+            tail = newNode;
+        }
+        else{
+            newNode.next=head;
+            head=newNode;
+        }
+    }
+
+    static public void display(){
+        node current = head;
+        if(current==null){
+            System.out.println("List is empty");
+        }
+    
+        while(current!=null){
+            System.out.print(current.data+ "->");
+             current = current.next;
+        
+        }
+        System.out.println();
+}
+}
+class node{
+    node next;
+    int data;
+    
+    node(int data){
+        this.data = data;
+        this.next = null; 
+    }
+}
