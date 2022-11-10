@@ -1,0 +1,22 @@
+/*** Insertion At The Beginning Of The Linked List ***/
+
+Inserting a new element into a singly linked list at beginning is quite simple. We just need to make a few adjustments in the node links. 
+
+There are the following steps which need to be followed in order to insert a new node in the list at beginning.
+
+Allocate the space for the new node and store data into the data part of the node. This will be done by the following statements (in java). 
+
+node newNode = new node(data);
+
+create a function named insertFirst where we write a code to insert the node at the beginning.
+
+In this function, the first thing to be done is to check whether the head is 'null' or not.
+If the head is 'null' then assign newnode to head and newnode to tail also.
+
+If head is not null then perform, 
+
+newnode -> next = head
+head->newnode
+
+This is how the node is inserted at the beginning.
+
