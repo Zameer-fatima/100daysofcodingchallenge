@@ -1,0 +1,67 @@
+Solution:
+
+public class insertAtLast {
+    public static void main(String[] args) {
+        addData(2);
+        addData(5);
+        addData(8);
+        addData(10);
+        addLast(20);
+        display();
+    }
+
+    static node head = null;
+    static node tail = null;
+ 
+   static  void addData(int data){
+         node newNode = new node(data);
+         if(head==null){
+             head=newNode;
+             tail=newNode;
+         }
+         else{
+             tail.next = newNode;
+             tail=newNode;
+         }
+     }
+
+     /*insert at the end of linked list */
+
+     static  void addLast(int data){
+                node newNode = new node(data);
+                 if(head == null){
+                     head = newNode;
+                     tail = newNode;
+                 }
+                 else{
+                     tail.next = newNode;
+                     tail = newNode;
+                 }
+             }    
+
+             static public void display(){
+                node current = head;
+                if(current==null){
+                    System.out.println("List is empty");
+                }
+            
+                while(current!=null){
+                    System.out.print(current.data+ "->");
+                     current = current.next;
+                }
+                if(current==null){
+                    System.out.print("null");
+                System.out.println();
+                
+            }
+}
+}
+class node{
+    node next;
+    int data;
+    
+    node(int data){
+        this.data = data;
+        this.next = null; 
+    }
+}
