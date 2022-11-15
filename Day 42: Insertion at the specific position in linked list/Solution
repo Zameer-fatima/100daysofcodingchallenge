@@ -1,0 +1,82 @@
+Solution:
+
+public class day42 {
+    public static void main(String[] args) {
+        addData(2);
+        addData(5);
+        addData(8);
+        addData(10);
+        addFirst(1);
+        addMid(6, 3);
+        display();
+    }
+    static node head = null;
+    static node tail = null;
+
+    static void addData(int data){
+        node newNode = new node(data);
+        if(head==null){
+            head=newNode;
+            tail=newNode;
+        }
+        else{
+            tail.next = newNode;
+            tail=newNode;
+        }
+    }
+    static void addFirst(int data){
+        node newNode = new node(data);
+        if(head==null){
+            head = newNode;
+            tail = newNode;
+        }
+        else{
+            newNode.next=head;
+            head=newNode;
+        }
+    }
+
+    static void addMid(int data, int pos){
+                 node newNode = new node(data);
+                 int n=0;
+                 node current = head;
+                 if(pos==1 || head==null)
+                 {
+                     addFirst(data);
+                 }
+                 while(n<pos-1)
+                 {
+                     current=current.next;
+                     n++;
+                 }
+                 newNode.next = current.next;
+                 current.next = newNode;
+             }
+
+    static public void display(){
+        node current = head;
+        if(current==null){
+            System.out.println("List is empty");
+        }
+    
+        while(current!=null){
+            System.out.print(current.data+ "->");
+             current = current.next;
+        }
+        if(current==null){
+            System.out.println("null");
+        }
+        System.out.println();
+     }
+    
+}
+
+class node{
+    node next;
+    int data;
+    
+    node(int data){
+        this.data = data;
+        this.next = null; 
+    }
+}
