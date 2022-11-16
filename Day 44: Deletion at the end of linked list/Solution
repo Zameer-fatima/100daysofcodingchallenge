@@ -1,0 +1,67 @@
+Solution:
+
+public class day44 {
+    public static void main(String[] args) {
+        addData(1);
+        addData(2);
+        addData(3);
+        addData(4);
+        addData(5);
+        display();
+        System.out.println("Deleting the last node-");
+        deletL();
+        display();
+    }
+    
+    static node head = null;
+    static node tail = null;
+
+  static  void addData(int data){
+        node newNode = new node(data);
+        if(head==null){
+            head=newNode;
+            tail=newNode;
+        }
+        else{
+            tail.next = newNode;
+            tail=newNode;
+        }
+    }
+
+    static void deletL(){
+                    node current = head;
+                    int n=0;
+                    while(current.next.next!=null){
+                        current = current.next;
+                        n++;
+                    }
+                    current.next=null;
+                }
+
+    static public void display(){
+        node current = head;
+        if(current==null){
+            System.out.println("List is empty");
+        }
+    
+        while(current!=null){
+            System.out.print(current.data+ "->");
+             current = current.next;
+        }
+        if(current==null){
+            System.out.println("null");
+        }
+        System.out.println();
+        
+    }
+}
+
+class node{
+    node next;
+    int data;
+    
+    node(int data){
+        this.data = data;
+        this.next = null; 
+    }
+}
