@@ -12,3 +12,21 @@ How we are going to do that:
 1. we are going to use two pointers, one pointer which is going to move just one step at a time, second is a pointer which is going to move two steps at a time.
 2. If there is a cycle present in LinkedList then these pointers are going to meet at a point otherwise the other pointer will be null 
 when the first pointer is in the mid of LinkedList.
+
+Test Cases:
+
+Test Case 1:
+Input: head = [3,2,0,-4], pos = 1
+Output: true
+Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
+
+
+Test Case 2:
+Input: head = [1,2], pos = 0
+Output: true
+Explanation: There is a cycle in the linked list, where the tail connects to the 0th node.
+
+Test Case 3:
+Input: head = [1], pos = -1
+Output: false
+Explanation: There is no cycle in the linked list
